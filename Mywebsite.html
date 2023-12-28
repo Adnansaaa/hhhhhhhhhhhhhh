@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="unknown1.png">
+    <style>
+      img{
+        border-radius: 15px;
+      }
+      button {
+  font-size: 50px;
+  background-color: #f2f2f2;
+  color: black;
+  border-radius: 10px; /* Add this line to set the button border radius */
+}
+
+      img {
+  float: left;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+        body {
+          background-color: #808080;
+        }
+        </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="my.css">
+  <style>
+    /* Add these styles to your existing CSS */
+
+.nav-container {
+  background-color: #808080;
+  overflow: hidden;
+}
+
+.nav-container a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-container a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+  margin-top: 50px; /* Adjust margin based on your header height */
+}
+
+    body {
+      font-family: "Audiowide", sans-serif;
+      background-color: CadmiumGreen;
+      margin: 0;
+    }
+
+    html {
+      font-size: 22px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center; /* Center the items horizontally */
+      align-items: center;
+      padding: 20px;
+    }
+p{
+  color: #000000;
+}
+    a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin: 0 20px; /* Adjust spacing between links */
+    }
+
+    h1 {
+      color: #f2f2f2;
+      text-align: left;
+      font-size: 3em;
+      margin: 20px;
+    }
+
+    #home-section,
+    #skills-section {
+      margin-top: 50px; /* Adjust spacing between sections */
+      padding: 20px;
+    }
+
+    .about-me-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .about-me-container h1 {
+      text-align: center;
+    }
+
+    .about-me-container p {
+      text-align: center;
+    }
+  </style>
+  <title>Adnan's project 101</title>
+</head>
+<body>
+  <div class="nav-container">
+    <a title="doesn't really do anything" href="Mywebsite.html" href="#home-section"><p>Home</p></a>
+    <a href="inde.html" target="_blank" href="#skills-section"><p>Skills</p></a>
+    <a title="goes to Socials" href="https://linktr.ee/Adnan_socials" target="_blank" href="#socials-section"><p>Socials</p></a>
+    <a title="goes to about me section" href="#about-me-content" href="#about-me-section"><p>About me</p></a>
+<a target="_blank" href="hireme.html"><p>Hire me!</p></a>
+<a href="https://discord.gg/bQVnt35F"   title="goes to discord" target="_blank"><p>Dm me on Discord</p></a>
+</div>
+<h1 style="text-align: center; color: tomato;">Adnan's <br>Official <br>Portfolio</h1>
+  <div class="about-me-container" id="about-me-section">
+    <h1>Hello, I'm <u>Adnan</u>👋</h1>
+    <p><i>(I'm a new coder)</i></p>
+  <img src="logo.png" width="500px">
+  </div>
+  <button onclick="dosomething" style="font-size: 50px; background-color: #f2f2f2;">👇About me👇</button>
+  <img src="unknown.png" style="font-size: 1em; margin-right: 10px;"></img>
+  <p id="about-me-content">Im a 12 year old kid that started coding  on December 20th, 2023. My hobbies are jiu jitsu and soccer, 
+    I also love play games such as Fortnite, Minecraft, and Roblox. My favorite place to go to is Dubai becuase of all the delicous foods there and very high tech stuff.  
+    Coding has been a fun expierence. I also love coding because its very uniqe and its fun to see how games are made and how websites are devoloped. 
+    Ever since i've still been coding and working hard. In the future I want to have many opportunities and work for many people and just have a great time. </p>
+    <footer><br><br><br>
+      <h1> <small>Why you should hire me! </small></h1>
+      <p>You should hire me because I take coding serious. I can code very easily, when I run into a bug im very problem solving. I find the bug I understand the problem and I quickly 
+        fix it. One of my favorite quotes is, "Make it work, make it right, make it fast." – Kent Beck. This quote has inspired me to code better and think more understandably.
+Im very productive and and manage time very precisely. Im very concise and different from other people. I work very hard and get through obstacals very easily. You can always rely on
+to do the job. Im always working hard and never stop. Thank you for your time!
+      </p>
+      
+    <p> <small><small> &copy; 2023 MIT License Copyright.</small></small></p>
+    </footer>
+    <script>
+      document.querySelectorAll('a[href^="#about-me-section"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+    
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>    
+  </body>
+
+</html>
